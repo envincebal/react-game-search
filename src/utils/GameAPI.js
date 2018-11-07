@@ -7,6 +7,6 @@ export const getGames = (searchGame) => {
 
   return fetch(url)
   .then(res => res.json())
-  .then(res2 => console.log(res2));
+  .then(res2 => console.log(res2.results));
 }
 
