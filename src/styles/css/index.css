@@ -7,26 +7,37 @@
 body {
   font-family: "Open Sans", sans-serif; }
 
-.search-bar {
-  background-color: #a3a3a3; }
-  .search-bar .search-form {
-    text-align: center;
-    padding: 10px 0; }
-    .search-bar .search-form .input-field {
-      padding: 6px;
-      font-size: 18px; }
-    .search-bar .search-form .search-button {
-      padding: 8px 15px;
-      cursor: pointer;
+.navbar {
+  background-color: #b8b8b8;
+  display: flex;
+  justify-content: center; }
+  .navbar .navbar-item {
+    margin: 0 10px;
+    padding: 10px; }
+    .navbar .navbar-item .nav-link {
       color: #fff;
-      border: none;
-      font-size: 18px;
-      background-color: #31b931; }
+      text-decoration: none; }
+    .navbar .navbar-item .selected {
+      font-weight: bold; }
+
+.search-bar {
+  text-align: center;
+  padding: 10px 0; }
+  .search-bar .input-field {
+    padding: 6px;
+    font-size: 18px; }
+  .search-bar .search-button {
+    padding: 8px 15px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    background-color: #31b931; }
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 50px 0 0 0; }
+  padding: 10px 0 0 0; }
 
 .main-content {
   text-align: center; }

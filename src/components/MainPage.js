@@ -7,7 +7,7 @@ const MainPage = (props) => {
       <h1 className="title">React Game Search</h1>
       <p>Search for all your favorite video games!</p>
       <img className="main-image" src={logo} alt={"consoles"} />
-    </div> 
+    </div>
   );
 }
 
