@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import GameSearch from './components/GameSearch';
+import GamesDetails from './components/GamesDetails';
 import MainPage from './components/MainPage';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -16,6 +17,7 @@ class App extends Component {
               <Route exact path="/" component={MainPage} />
               <Route exact path="/games" component={GameSearch} />
               <Route exact path="/about" component={About} />}
+              <Route exact path="/details" component={GamesDetails} />}
             </Switch>
           </div>
         </div>

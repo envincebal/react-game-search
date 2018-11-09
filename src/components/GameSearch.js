@@ -26,7 +26,7 @@ class Search extends Component {
       .then(res => res.json())
       .then(data => {
         const response = data.results;
-
+        console.log(response);
         response.forEach(game => {
           this.setState(prevState => ({
             games: prevState.games.concat(game)
@@ -74,7 +74,7 @@ class Search extends Component {
         </div>
         <div className="container">
           {games.length > 0 ? (
-            games.map((game, index) => {
+            games.map(game => {
               return <Game
                 key={game.id}
                 icon={game.image.icon_url}
