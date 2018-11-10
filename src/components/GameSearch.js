@@ -77,6 +77,7 @@ class Search extends Component {
             games.map(game => {
               return <Game
                 key={game.id}
+                game={game}
                 icon={game.image.icon_url}
                 gameTitle={game.name}
               />
