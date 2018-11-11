@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Moment from "moment";
 
-
-
 class GameDetails extends Component {
 
   getReleaseDate = () => {
@@ -18,42 +16,59 @@ class GameDetails extends Component {
     }
   }
 
-
   render() {
     const gameInfo = this.props.location.state.game;
     const {
       image: {
-        icon_url: icon
+        medium_url: icon
       },
       platforms,
       name,
-      deck } = gameInfo;
+      deck, site_detail_url } = gameInfo;
     return (
+
       <div className="details-content">
-        <div className="box-art">
-          <img src={icon} alt="box art" />
-        </div>
-        <div className="game-info">
-          <h1>{name}</h1>
-          <div className="release-date">
-            <h3>Release Data</h3>
-            <p>{this.getReleaseDate()}</p>
+        <h1 className="game-title">{name}</h1>
+        <div className="info-div">
+          <div className="box-art">
+            <img className="box-img" src={icon} alt="box art" />
           </div>
-          <div className="platforms">
-            <h3>Platforms</h3>
-            {platforms ? (
-              platforms.map((platform, i) => {
-                return <p key={i}>{platform.name}</p>;
-              })
-            ) : (
-                <p>N/A</p>
-              )
-            }
-          </div>
-          <div className="about">
-            <h3>About</h3>
-            <p>{deck}</p>
-            {console.log(this.props.location.state.game)}
+          <div className="game-info">
+            <div className="platforms">
+              <h3>Platforms</h3>
+              <p>
+                {platforms ? (
+                  platforms.map((platform, i) => {
+                    if (i === platforms.length - 1) {
+                      return <span className="platform-item" key={i}>{platform.name}</span>;
+                    } else {
+                      return <span className="platform-item" key={i}>{platform.name + ", "}</span>;
+                    }
+                  })
+                ) : (
+                    <p>N/A</p>
+                  )
+                }
+              </p>
+            </div>
+            <div className="release-date">
+              <h3>Release Date</h3>
+              <p>{this.getReleaseDate()}</p>
+            </div>
+            <div className="summary">
+              <div className="summary-content">
+                <h3>Summary</h3>
+                <p>{deck}</p>
+              </div>
+
+              {console.log(gameInfo)}
+            </div>
+            <div className="more-info">
+              <div className="more-info-content">
+                <h3>More information</h3>
+                <a className="info-link" href={site_detail_url} alt="more info" rel="noopener noreferrer" target="_blank"><i className="fas fa-3x fa-external-link-alt"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -37,12 +37,10 @@ class Search extends Component {
     this.setState({
       games: []
     })
-
   }
 
   handleSubmit = (e) => {
     const { title } = this.state;
-
     e.preventDefault();
 
     if (!title) {
@@ -50,13 +48,11 @@ class Search extends Component {
     } else {
       this.handleGames(title);
     }
-
   }
 
   render() {
     const { games } = this.state;
     return (
-
       <div className="App">
         <div className="search-bar">
           <form>
@@ -72,7 +68,7 @@ class Search extends Component {
             >Search</button>
           </form>
         </div>
-        <div className="container">
+        <div className="games-container">
           {games.length > 0 ? (
             games.map(game => {
               return <Game
@@ -86,8 +82,6 @@ class Search extends Component {
               console.log(this.state.title)
             )
           }
-
-
         </div>
       </div>
 

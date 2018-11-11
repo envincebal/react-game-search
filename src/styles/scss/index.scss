@@ -10,6 +10,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+p {
+  font-size: 14px;
+}
+
 .navbar {
   background-color: #b8b8b8;
   display: flex;
@@ -29,32 +33,32 @@ body {
       font-weight: bold;
     }
   }
-
 }
 
 .search-bar {
-    text-align: center;
-    padding: 10px 0;
+  text-align: center;
+  padding: 10px 0;
 
-    .input-field {
-      padding: 6px;
-      font-size: 18px;
-    }
+  .input-field {
+    padding: 6px;
+    font-size: 18px;
+    border: 1px solid #000;
+  }
 
-    .search-button {
-      padding: 8px 15px;
-      cursor: pointer;
-      color: #fff;
-      border: none;
-      font-size: 18px;
-      background-color: #31b931;
-    }
+  .search-button {
+    padding: 8px 15px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    background-color: #31b931;
+  }
 
 }
 
 .container {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   padding: 10px 0 0 0;
 }
 
@@ -64,5 +68,143 @@ body {
   .main-image {
     width: 100%;
     margin: 30px 0 0 0;
+  }
+}
+
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .game-box {
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+
+
+    .game-content {
+      cursor: pointer;
+      border: 1px solid #000;
+      padding: 10px 0;
+      transition: all 0.5s ease;
+
+      .game-link {
+        color: #4f4fdd;
+      }
+    }
+
+    .game-content:hover {
+      background-color: #c4c4c4
+    }
+  }
+}
+
+
+.details-content {
+  .game-title {
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+
+  .info-div {
+    display: flex;
+
+    .box-art {
+      margin: 0 20px;
+      width: 40%;
+
+      .box-img {
+        width: 100%;
+        border: 1px solid #000;
+      }
+    }
+
+    .game-info {
+      margin: 0 20px;
+      width: 60%;
+      display: flex;
+      flex-flow: column;
+      min-height: 500px;
+
+      .game-info h1,
+      .summary h3,
+      .more-info h3 {
+        margin: 0 0 10px 0;
+      }
+
+      .platforms,
+      .release-date,
+      .summary,
+      .more-info {
+        text-align: center;
+        border: 1px solid #000;
+        margin: 0 0 10px 0;
+        padding: 0 10px;
+      }
+
+      .platforms,
+      .release-date {
+        padding: 10px 0;
+      }
+
+      .summary,
+      .more-info {
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        justify-content: center;
+      }
+
+      .more-info {
+        .fa-external-link-alt {
+          transition: all 0.5s ease;
+
+        }
+
+        .fa-external-link-alt:hover {
+          color: #57ce57;
+        }
+
+        .info-link:active,
+        .info-link:visited,
+        .info-link:link {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+
+@media (max-width: 865px) {
+  .games-container {
+    display: block;
+
+    .game-box {
+      width: 100%;
+    }
+  }
+
+  .details-content {
+    .game-title{
+      font-size: 24px; 
+    }
+    .info-div {
+      display: block;
+      margin: 0 0 50px 0;
+
+      .box-art {
+        width: auto;
+      }
+
+      .game-info {
+        width: auto;
+
+        .more-info {
+          padding: 0 0 5px 0;
+        }
+      }
+    }
   }
 }
