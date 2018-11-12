@@ -20,13 +20,13 @@ p {
   justify-content: center;
 
   .navbar-item {
-
     margin: 0 10px;
     padding: 10px;
 
     .nav-link {
       color: #fff;
       text-decoration: none;
+      font-size: 24px;
     }
 
     .selected {
@@ -54,6 +54,12 @@ p {
     background-color: #31b931;
   }
 
+  .error{
+    color: #e71616;
+    font-size: 18px;
+    margin: 15px 0 0 0; 
+    display: inline-block;
+  }
 }
 
 .container {
@@ -97,7 +103,6 @@ p {
     }
   }
 }
-
 
 .details-content {
   .game-title {
@@ -151,7 +156,6 @@ p {
         flex: 1;
         display: flex;
         align-items: center;
-
         justify-content: center;
       }
 
@@ -172,6 +176,20 @@ p {
         }
       }
     }
+  }
+}
+
+.about-title{
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.about-list{
+  font-size: 20px;
+
+  .giant-bomb-link{
+    text-decoration: none;
+    color: #4f4fdd;
   }
 }
 

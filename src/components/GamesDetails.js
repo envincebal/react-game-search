@@ -26,7 +26,6 @@ class GameDetails extends Component {
       name,
       deck, site_detail_url } = gameInfo;
     return (
-
       <div className="details-content">
         <h1 className="game-title">{name}</h1>
         <div className="info-div">
@@ -60,8 +59,6 @@ class GameDetails extends Component {
                 <h3>Summary</h3>
                 <p>{deck}</p>
               </div>
-
-              {console.log(gameInfo)}
             </div>
             <div className="more-info">
               <div className="more-info-content">

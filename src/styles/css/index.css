@@ -19,7 +19,8 @@ p {
     padding: 10px; }
     .navbar .navbar-item .nav-link {
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      font-size: 24px; }
     .navbar .navbar-item .selected {
       font-weight: bold; }
 
@@ -37,6 +38,11 @@ p {
     border: none;
     font-size: 18px;
     background-color: #31b931; }
+  .search-bar .error {
+    color: #e71616;
+    font-size: 18px;
+    margin: 15px 0 0 0;
+    display: inline-block; }
 
 .container {
   max-width: 1140px;
@@ -113,6 +119,16 @@ p {
     .details-content .info-div .game-info .more-info .info-link:visited,
     .details-content .info-div .game-info .more-info .info-link:link {
       color: #000; }
+
+.about-title {
+  text-align: center;
+  margin: 0 0 20px 0; }
+
+.about-list {
+  font-size: 20px; }
+  .about-list .giant-bomb-link {
+    text-decoration: none;
+    color: #4f4fdd; }
 
 @media (max-width: 865px) {
   .games-container {
