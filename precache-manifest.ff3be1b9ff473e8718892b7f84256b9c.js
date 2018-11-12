@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/react-game-search/static/js/runtime~main.055dcedc.js"
   },
   {
-    "revision": "4e5dabcbf93b1d561431",
-    "url": "/react-game-search/static/js/main.4e5dabcb.chunk.js"
+    "revision": "ff1d50326196b61f508a",
+    "url": "/react-game-search/static/js/main.ff1d5032.chunk.js"
   },
   {
     "revision": "2e332e7c0fb444f8a887",
     "url": "/react-game-search/static/js/1.2e332e7c.chunk.js"
   },
   {
-    "revision": "4e5dabcbf93b1d561431",
-    "url": "/react-game-search/static/css/main.b9bed57b.chunk.css"
+    "revision": "ff1d50326196b61f508a",
+    "url": "/react-game-search/static/css/main.d8339ce1.chunk.css"
   },
   {
-    "revision": "bf52d2fcc0f84f3279cfa54f82b147cf",
+    "revision": "7ba537b561b7cb1d2bc79547ad08f4d6",
     "url": "/react-game-search/index.html"
   }
 ];
