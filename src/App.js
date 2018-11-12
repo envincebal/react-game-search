@@ -14,10 +14,10 @@ class App extends Component {
           <Nav />
           <div className="container">
             <Switch>
-              <Route exact path="/" component={MainPage} />
-              <Route exact path="/games" component={GameSearch} />
-              <Route exact path="/about" component={About} />}
-              <Route exact path="/details" component={GamesDetails} />}
+              <Route exact path="/react-game-search/" component={MainPage} />
+              <Route path="/games" component={GameSearch} />
+              <Route  path="/about" component={About} />}
+              <Route  path="/details" component={GamesDetails} />}
             </Switch>
           </div>
         </div>

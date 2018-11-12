@@ -6,21 +6,21 @@ const Nav = () => {
     <div className="navbar">
       <div className="navbar-item">
         <NavLink
-          exact to="/"
+          exact to="/react-game-search/"
           activeClassName="selected"
           className="nav-link"
         >Home</NavLink>
       </div>
       <div className="navbar-item">
         <NavLink
-          exact to="/games"
+           to="/games"
           activeClassName="selected"
           className="nav-link"
         >Games</NavLink>
       </div>
       <div className="navbar-item">
         <NavLink
-          exact to="/about"
+           to="/about"
           activeClassName="selected"
           className="nav-link"
         >About</NavLink>
