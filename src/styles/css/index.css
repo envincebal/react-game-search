@@ -25,7 +25,8 @@ p {
     .navbar .navbar-item .nav-link {
       color: #fff;
       text-decoration: none;
-      font-size: 24px; }
+      font-size: 24px;
+      cursor: pointer; }
     .navbar .navbar-item .selected {
       font-weight: bold; }
 
@@ -151,13 +152,13 @@ p {
     .details-content .info-div .game-info .more-info .info-link:link {
       color: #000; }
 
-.about-title {
+.about-container .about-title {
   text-align: center;
   margin: 0 0 20px 0; }
 
-.about-list {
+.about-container .about-statement {
   font-size: 20px; }
-  .about-list .giant-bomb-link {
+  .about-container .about-statement .giant-bomb-link {
     text-decoration: none;
     color: #4f4fdd; }
 
@@ -176,4 +177,6 @@ p {
     .details-content .info-div .game-info {
       width: auto; }
       .details-content .info-div .game-info .more-info {
-        padding: 0 0 5px 0; } }
+        padding: 0 0 5px 0; }
+  .about-statement {
+    padding: 0 0 0 10px; } }

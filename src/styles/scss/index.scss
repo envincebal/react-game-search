@@ -32,6 +32,7 @@ p {
       color: #fff;
       text-decoration: none;
       font-size: 24px;
+      cursor: pointer;
     }
 
     .selected {
@@ -214,12 +215,13 @@ p {
   }
 }
 
-.about-title {
+.about-container{
+  .about-title {
   text-align: center;
   margin: 0 0 20px 0;
 }
 
-.about-list {
+.about-statement {
   font-size: 20px;
 
   .giant-bomb-link {
@@ -227,6 +229,8 @@ p {
     color: #4f4fdd;
   }
 }
+}
+
 
 // Media Queries
 
@@ -260,5 +264,9 @@ p {
         }
       }
     }
+  }
+
+  .about-statement{
+    padding: 0 0 0 10px;
   }
 }
