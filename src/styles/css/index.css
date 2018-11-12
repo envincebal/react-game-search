@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -12,7 +13,11 @@ p {
 
 .navbar {
   background-color: #b8b8b8;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center; }
   .navbar .navbar-item {
     margin: 0 10px;
@@ -56,14 +61,17 @@ p {
     margin: 30px 0 0 0; }
 
 .games-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .games-container .loading-div {
     margin: 0 auto;
     text-align: center; }
     .games-container .loading-div .loading {
       margin: 20px 0 0 0;
-      font-size: 32px; }
+      font-size: 24px; }
   .games-container .game-box {
     padding: 5px;
     width: 50%;
@@ -72,6 +80,7 @@ p {
       cursor: pointer;
       border: 1px solid #000;
       padding: 10px 0;
+      -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease; }
       .games-container .game-box .game-content .game-link {
         color: #4f4fdd; }
@@ -83,6 +92,8 @@ p {
   margin: 0 0 20px 0; }
 
 .details-content .info-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   .details-content .info-div .box-art {
     margin: 0 20px;
@@ -93,7 +104,12 @@ p {
   .details-content .info-div .game-info {
     margin: 0 20px;
     width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
     flex-flow: column;
     min-height: 500px; }
     .details-content .info-div .game-info .game-info h1,
@@ -113,11 +129,20 @@ p {
       padding: 10px 0; }
     .details-content .info-div .game-info .summary,
     .details-content .info-div .game-info .more-info {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
       flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center; }
     .details-content .info-div .game-info .more-info .fa-external-link-alt {
+      -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease; }
     .details-content .info-div .game-info .more-info .fa-external-link-alt:hover {
       color: #57ce57; }

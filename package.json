@@ -2,6 +2,7 @@
   "name": "react-game-search",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://envincebal.github.io/react-game-search",
   "dependencies": {
     "moment": "^2.22.2",
     "node-sass": "^4.9.4",
@@ -15,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,6 +30,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.5.0"
+    "@fortawesome/fontawesome-free": "^5.5.0",
+    "gh-pages": "^2.0.1"
   }
 }

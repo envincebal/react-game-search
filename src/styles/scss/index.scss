@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -16,7 +17,11 @@ p {
 
 .navbar {
   background-color: #b8b8b8;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 
   .navbar-item {
@@ -78,15 +83,19 @@ p {
 }
 
 .games-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
   .loading-div {
     margin: 0 auto;
     text-align: center;
-    .loading{
+
+    .loading {
       margin: 20px 0 0 0;
-      font-size: 32px;
+      font-size: 24px;
     }
   }
 
@@ -100,6 +109,7 @@ p {
       cursor: pointer;
       border: 1px solid #000;
       padding: 10px 0;
+      -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
 
       .game-link {
@@ -120,6 +130,8 @@ p {
   }
 
   .info-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     .box-art {
@@ -135,7 +147,12 @@ p {
     .game-info {
       margin: 0 20px;
       width: 60%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
       flex-flow: column;
       min-height: 500px;
 
@@ -162,14 +179,23 @@ p {
 
       .summary,
       .more-info {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
         flex: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
       }
 
       .more-info {
         .fa-external-link-alt {
+          -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 
         }
