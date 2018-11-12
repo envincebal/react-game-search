@@ -11,7 +11,7 @@ body {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .navbar {
@@ -40,13 +40,13 @@ p {
   padding: 10px 0;
 
   .input-field {
-    padding: 6px;
+    padding: 10px 15px;
     font-size: 18px;
     border: 1px solid #000;
   }
 
   .search-button {
-    padding: 8px 15px;
+    padding: 11px 15px;
     cursor: pointer;
     color: #fff;
     border: none;
@@ -54,10 +54,10 @@ p {
     background-color: #31b931;
   }
 
-  .error{
+  .error {
     color: #e71616;
     font-size: 18px;
-    margin: 15px 0 0 0; 
+    margin: 15px 0 0 0;
     display: inline-block;
   }
 }
@@ -72,7 +72,7 @@ p {
   text-align: center;
 
   .main-image {
-    width: 100%;
+    width: 80%;
     margin: 30px 0 0 0;
   }
 }
@@ -80,6 +80,15 @@ p {
 .games-container {
   display: flex;
   flex-wrap: wrap;
+
+  .loading-div {
+    margin: 0 auto;
+    text-align: center;
+    .loading{
+      margin: 20px 0 0 0;
+      font-size: 32px;
+    }
+  }
 
   .game-box {
     padding: 5px;
@@ -179,15 +188,15 @@ p {
   }
 }
 
-.about-title{
+.about-title {
   text-align: center;
   margin: 0 0 20px 0;
 }
 
-.about-list{
+.about-list {
   font-size: 20px;
 
-  .giant-bomb-link{
+  .giant-bomb-link {
     text-decoration: none;
     color: #4f4fdd;
   }
@@ -205,9 +214,10 @@ p {
   }
 
   .details-content {
-    .game-title{
-      font-size: 24px; 
+    .game-title {
+      font-size: 24px;
     }
+
     .info-div {
       display: block;
       margin: 0 0 50px 0;

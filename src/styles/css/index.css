@@ -8,7 +8,7 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 p {
-  font-size: 14px; }
+  font-size: 16px; }
 
 .navbar {
   background-color: #b8b8b8;
@@ -28,11 +28,11 @@ p {
   text-align: center;
   padding: 10px 0; }
   .search-bar .input-field {
-    padding: 6px;
+    padding: 10px 15px;
     font-size: 18px;
     border: 1px solid #000; }
   .search-bar .search-button {
-    padding: 8px 15px;
+    padding: 11px 15px;
     cursor: pointer;
     color: #fff;
     border: none;
@@ -52,12 +52,18 @@ p {
 .main-content {
   text-align: center; }
   .main-content .main-image {
-    width: 100%;
+    width: 80%;
     margin: 30px 0 0 0; }
 
 .games-container {
   display: flex;
   flex-wrap: wrap; }
+  .games-container .loading-div {
+    margin: 0 auto;
+    text-align: center; }
+    .games-container .loading-div .loading {
+      margin: 20px 0 0 0;
+      font-size: 32px; }
   .games-container .game-box {
     padding: 5px;
     width: 50%;

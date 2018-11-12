@@ -7,7 +7,8 @@ class Search extends Component {
     this.state = {
       title: "",
       games: [],
-      error: false
+      error: false,
+      loading: false
     }
   }
 
@@ -23,23 +24,27 @@ class Search extends Component {
     const endpoint = `https://www.giantbomb.com/api/search/?api_key=`;
     const url = `${proxyUrl}${endpoint}${key}&format=json&resources=game&query=${search}&limit=30`;
 
-    fetch(url)
-      .then(res => res.json())
-      .then(data => {
-        const response = data.results;
-        console.log(response);
-        response.forEach(game => {
-          this.setState(prevState => ({
-            games: prevState.games.concat(game)
-          }))
-        });
-      }).catch(error => {
-        console.log('Request failed', error);
-      });
+    this.setState({ loading: true }, () => {
+      fetch(url)
+        .then(res => res.json())
+        .then(data => {
+          const response = data.results;
 
-    this.setState({
-      games: []
+          response.forEach(game => {
+            this.setState(prevState => ({
+              games: prevState.games.concat(game),
+              loading: false
+            }))
+          });
+        }).catch(error => {
+          console.log('Request failed', error);
+        });
+
+      this.setState({
+        games: []
+      })
     })
+
   }
 
   handleSubmit = (e) => {
@@ -55,7 +60,7 @@ class Search extends Component {
   }
 
   render() {
-    const { games, error } = this.state;
+    const { games, error, loading } = this.state;
     return (
       <div className="App">
         <div className="search-bar">
@@ -74,15 +79,22 @@ class Search extends Component {
           <span className="error">{error ? "You kind of need to type something first, genius." : ""}</span>
         </div>
         <div className="games-container">
-          {
-            games.map(game => {
-              return <Game
-                key={game.id}
-                game={game}
-                icon={game.image.icon_url}
-                gameTitle={game.name}
-              />
-            })
+          {loading ? (
+            <div className="loading-div">
+              <i className="fa fa-3x fa-spinner fa-spin" />
+              <p className="loading">Loading....</p>
+            </div>
+          ) : (
+              games.map(game => {
+                return <Game
+                  key={game.id}
+                  game={game}
+                  icon={game.image.icon_url}
+                  gameTitle={game.name}
+                />
+              })
+            )
+
           }
         </div>
       </div>
