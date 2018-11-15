@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import Moment from "moment";
+import errorBox from "../img/no-box.jpeg";
 
 class GameDetails extends Component {
+  addDefaultSrc = (ev) => {
+    ev.target.src = errorBox;
+  }
 
   getReleaseDate = () => {
     const gameInfo = this.props.location.state.game;
@@ -30,7 +34,7 @@ class GameDetails extends Component {
         <h1 className="game-title">{name}</h1>
         <div className="info-div">
           <div className="box-art">
-            <img className="box-img" src={icon} alt="box art" />
+            <img className="box-img" onError={this.addDefaultSrc} src={icon} alt="box art" />
           </div>
           <div className="game-info">
             <div className="platforms">
@@ -71,7 +75,6 @@ class GameDetails extends Component {
       </div>
     );
   }
-
 }
 
 export default GameDetails;
