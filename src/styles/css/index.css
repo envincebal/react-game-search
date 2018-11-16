@@ -83,6 +83,9 @@ p {
       padding: 10px 0;
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease; }
+      .games-container .game-box .game-content .game-icon {
+        width: 80px;
+        height: 80px; }
       .games-container .game-box .game-content .game-link {
         color: #4f4fdd; }
     .games-container .game-box .game-content:hover {

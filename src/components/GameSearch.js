@@ -25,6 +25,7 @@ class Search extends Component {
     const url = `${proxyUrl}${endpoint}${key}&format=json&resources=game&query=${search}&limit=30`;
 
     this.setState({ loading: true }, () => {
+
       fetch(url)
         .then(res => res.json())
         .then(data => {
