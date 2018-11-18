@@ -6,7 +6,7 @@ const Nav = () => {
     <div className="navbar">
       <div className="navbar-item">
         <NavLink
-          exact to="/react-game-search/"
+          exact to="/"
           activeClassName="selected"
           className="nav-link"
         >Home</NavLink>
