@@ -14,7 +14,7 @@ class App extends Component {
           <Nav />
           <div className="container">
             <Switch>
-              <Route exact path="/react-game-search/" component={MainPage} />
+              <Route exact path="/react-game-search" component={MainPage} />
               <Route path="/games" component={GameSearch} />
               <Route  path="/about" component={About} />}
               <Route  path="/details" component={GamesDetails} />}
