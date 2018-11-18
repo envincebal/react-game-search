@@ -8,7 +8,8 @@ class Search extends Component {
       title: "",
       games: [],
       error: false,
-      loading: false
+      loading: false,
+      timeOut: false
     }
   }
 
@@ -24,28 +25,38 @@ class Search extends Component {
     const endpoint = `https://www.giantbomb.com/api/search/?api_key=`;
     const url = `${proxyUrl}${endpoint}${key}&format=json&resources=game&query=${search}&limit=30`;
 
-    this.setState({ loading: true }, () => {
-
-      fetch(url)
-        .then(res => res.json())
-        .then(data => {
-          const response = data.results;
-
-          response.forEach(game => {
-            this.setState(prevState => ({
-              games: prevState.games.concat(game),
-              loading: false
-            }))
-          });
-        }).catch(error => {
-          console.log('Request failed', error);
-        });
-
-      this.setState({
-        games: []
-      })
+    this.setState({
+      loading: true,
+      timeOut: false,
+      games: []
     })
 
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        const response = data.results;
+
+        response.forEach(game => {
+          this.setState(prevState => ({
+            games: prevState.games.concat(game),
+            loading: false
+          }))
+        });
+      })
+      .catch(error => {
+        console.log('Request failed', error);
+      });
+
+    setTimeout(() => {
+      const { games } = this.state;
+
+      if (!games.length) {
+        this.setState({
+          loading: false,
+          timeOut: true
+        })
+      }
+    }, 8000);
   }
 
   handleSubmit = (e) => {
@@ -53,7 +64,10 @@ class Search extends Component {
     e.preventDefault();
 
     if (!title) {
-      this.setState({ error: true })
+      this.setState({
+        error: true,
+        timeOut: false
+      })
     } else {
       this.setState({ error: false })
       this.handleGames(title);
@@ -61,7 +75,7 @@ class Search extends Component {
   }
 
   render() {
-    const { games, error, loading } = this.state;
+    const { games, error, loading, timeOut } = this.state;
     return (
       <div className="App">
         <div className="search-bar">
@@ -77,7 +91,10 @@ class Search extends Component {
               onClick={this.handleSubmit}
             >Search</button>
           </form>
-          <span className="error">{error ? "You kind of need to type something first, genius." : ""}</span>
+          <div className="error-content">
+            <span className="error">{error ? "You kind of need to type something first, genius." : null}</span>
+            <span className="error">{timeOut ? "We could not find the game you're looking for. Please, try again." : null}</span>
+          </div>
         </div>
         <div className="games-container">
           {loading ? (
@@ -95,11 +112,9 @@ class Search extends Component {
                 />
               })
             )
-
           }
         </div>
       </div>
-
     );
   }
 }
