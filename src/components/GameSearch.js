@@ -56,7 +56,7 @@ class Search extends Component {
           timeOut: true
         })
       }
-    }, 8000);
+    }, 10000);
   }
 
   handleSubmit = (e) => {
@@ -92,8 +92,8 @@ class Search extends Component {
             >Search</button>
           </form>
           <div className="error-content">
-            <span className="error">{error ? "You kind of need to type something first, genius." : null}</span>
-            <span className="error">{timeOut ? "We could not find the game you're looking for. Please, try again." : null}</span>
+            <span className="error">{error && ("You kind of need to type something first, genius.")}</span>
+            <span className="error">{timeOut && ("We could not find the game you're looking for. Please try again.")}</span>
           </div>
         </div>
         <div className="games-container">
