@@ -5,7 +5,7 @@ const MainPage = (props) => {
   return (
     <div className="main-content">
       <h1 className="title">React Game Search</h1>
-      <p>Search for all your favorite video games!</p>
+      <p>Search for all your favorite video games! Click the "Games" tab to get started!</p>
       <img className="main-image" src={logo} alt={"consoles"} />
     </div>
   );

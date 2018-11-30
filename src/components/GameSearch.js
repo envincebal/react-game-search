@@ -29,34 +29,32 @@ class Search extends Component {
       loading: true,
       timeOut: false,
       games: []
-    })
+    });
 
     fetch(url)
       .then(res => res.json())
       .then(data => {
         const response = data.results;
 
-        response.forEach(game => {
-          this.setState(prevState => ({
-            games: prevState.games.concat(game),
-            loading: false
-          }))
-        });
+        if (response.length >= 1) {
+          response.forEach(game => {
+            this.setState(prevState => ({
+              games: prevState.games.concat(game),
+              loading: false
+            }))
+          });
+        }else{
+          this.setState({
+            loading: false,
+            timeOut: true
+          })
+        }
+
       })
       .catch(error => {
         console.log('Request failed', error);
       });
 
-    setTimeout(() => {
-      const { games } = this.state;
-
-      if (!games.length) {
-        this.setState({
-          loading: false,
-          timeOut: true
-        })
-      }
-    }, 10000);
   }
 
   handleSubmit = (e) => {
