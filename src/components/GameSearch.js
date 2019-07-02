@@ -29,25 +29,22 @@ class Search extends Component {
       loading: true,
       timeOut: false,
       games: []
-<<<<<<< HEAD
-    })
-=======
+
+
+
     });
->>>>>>> 44684ca3de2b53b37e1e0ce013eb1c24ce2e00f4
+
 
     fetch(url)
       .then(res => res.json())
       .then(data => {
         const response = data.results;
-<<<<<<< HEAD
-
         response.forEach(game => {
           this.setState(prevState => ({
             games: prevState.games.concat(game),
             loading: false
           }))
         });
-=======
 
         if (response.length >= 1) {
           response.forEach(game => {
@@ -62,8 +59,6 @@ class Search extends Component {
             timeOut: true
           })
         }
-
->>>>>>> 44684ca3de2b53b37e1e0ce013eb1c24ce2e00f4
       })
       .catch(error => {
         console.log('Request failed', error);
