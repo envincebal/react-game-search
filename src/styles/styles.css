@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  background-color: #2A2A2A;
+  font-family: 'Raleway', sans-serif; }
+
+hr {
+  background-color: #000;
+  border: none;
+  height: 1px; }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 10px;
+  text-align: center; }
+
+.error-message {
+  color: #e93a3a;
+  font-size: 24px; }
+
+.title {
+  color: #15c9c0;
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 20px; }
+
+.title-input,
+.details-input,
+.edit-title,
+.edit-details {
+  max-width: 600px;
+  width: 100%;
+  margin: 5px 0;
+  border: none;
+  font-size: 25px;
+  padding: 5px;
+  background-color: #fff; }
+
+.input-button {
+  font-size: 40px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #8ff361; }
+
+.entry-section {
+  margin-top: 30px; }
+
+.entry {
+  width: 100%;
+  margin: 10px 0; }
+
+.entry-header {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f8ce5c; }
+  .entry-header .entry-title {
+    font-size: 30px;
+    margin-bottom: 10px; }
+  .entry-header .click-details {
+    font-style: italic; }
+
+.entry-content {
+  padding: 10px;
+  background-color: #f8da86;
+  white-space: pre-line;
+  word-wrap: break-word; }
+  .entry-content .details-title {
+    text-align: left; }
+  .entry-content .details {
+    text-align: left;
+    padding: 10px; }
+  .entry-content .entry-buttons {
+    margin-top: 10px; }
+    .entry-content .entry-buttons .edit,
+    .entry-content .entry-buttons .delete,
+    .entry-content .entry-buttons .save {
+      font-size: 20px;
+      margin: 0 5px;
+      padding: 5px;
+      padding: 5px 40px;
+      text-align: center;
+      cursor: pointer;
+      border: none; }
+    .entry-content .entry-buttons .edit,
+    .entry-content .entry-buttons .save {
+      background-color: #9cabfd; }
+    .entry-content .entry-buttons .delete {
+      font-size: 20px;
+      margin: 0 5px;
+      padding: 5px 50px;
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      background-color: #ff7e7e; }
+
+.hide-details {
+  display: none; }
