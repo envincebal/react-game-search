@@ -28,12 +28,9 @@ class Search extends Component {
     this.setState({
       loading: true,
       timeOut: false,
+      error: false,
       games: []
-
-
-
     });
-
 
     fetch(url)
       .then(res => res.json())
@@ -46,14 +43,11 @@ class Search extends Component {
           }))
         });
 
-        if (response.length >= 1) {
-          response.forEach(game => {
-            this.setState(prevState => ({
-              games: prevState.games.concat(game),
-              loading: false
-            }))
-          });
-        }else{
+        if (response.length > 0) {
+          this.setState({
+            loading: false
+          })
+        } else {
           this.setState({
             loading: false,
             timeOut: true
@@ -65,12 +59,16 @@ class Search extends Component {
       });
 
     setTimeout(() => {
-      const { games } = this.state;
+      const { games, title } = this.state;
 
-      if (!games.length) {
+      if (!games.length && title) {
         this.setState({
           loading: false,
           timeOut: true
+        })
+      } else {
+        this.setState({
+          timeOut: false
         })
       }
     }, 10000);
@@ -123,7 +121,7 @@ class Search extends Component {
               games.map(game => {
                 return <Game
                   key={game.id}
-                  game={game}
+                  game={game.name}
                   icon={game.image.icon_url}
                   gameTitle={game.name}
                 />
