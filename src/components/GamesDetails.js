@@ -8,7 +8,7 @@ class GameDetails extends Component {
   }
 
   getReleaseDate = () => {
-    const gameInfo = this.props.location.state.game;
+    const gameInfo = this.props.location.state.gameDetails;
     const { expected_release_day,
       expected_release_month,
       expected_release_year, original_release_date } = gameInfo;
@@ -21,7 +21,7 @@ class GameDetails extends Component {
   }
 
   render() {
-    const gameInfo = this.props.location.state.game;
+    const gameInfo = this.props.location.state.gameDetails;
     const {
       image: {
         medium_url: icon
@@ -29,6 +29,7 @@ class GameDetails extends Component {
       platforms,
       name,
       deck, site_detail_url } = gameInfo;
+
     return (
       <div className="details-content">
         <h1 className="game-title">{name}</h1>

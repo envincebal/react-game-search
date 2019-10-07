@@ -112,6 +112,7 @@ class Search extends Component {
           </div>
         </div>
         <div className="games-container">
+
           {loading ? (
             <div className="loading-div">
               <i className="fa fa-3x fa-spinner fa-spin" />
@@ -124,6 +125,7 @@ class Search extends Component {
                   game={game.name}
                   icon={game.image.icon_url}
                   gameTitle={game.name}
+                  gameDetails={game}
                 />
               })
             )
