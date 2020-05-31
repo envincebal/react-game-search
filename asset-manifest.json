@@ -1,7 +1,7 @@
 {
   "main.css": "/react-game-search/main/static/css/main.c75e6e98.chunk.css",
-  "main.js": "/react-game-search/main/static/js/main.834bb708.chunk.js",
-  "main.js.map": "/react-game-search/main/static/js/main.834bb708.chunk.js.map",
+  "main.js": "/react-game-search/main/static/js/main.f536f896.chunk.js",
+  "main.js.map": "/react-game-search/main/static/js/main.f536f896.chunk.js.map",
   "static/js/1.4b9e268b.chunk.js": "/react-game-search/main/static/js/1.4b9e268b.chunk.js",
   "static/js/1.4b9e268b.chunk.js.map": "/react-game-search/main/static/js/1.4b9e268b.chunk.js.map",
   "runtime~main.js": "/react-game-search/main/static/js/runtime~main.f58f2758.js",
@@ -10,6 +10,6 @@
   "static/media/consoles.jpg": "/react-game-search/main/static/media/consoles.8a54017e.jpg",
   "static/css/main.c75e6e98.chunk.css.map": "/react-game-search/main/static/css/main.c75e6e98.chunk.css.map",
   "index.html": "/react-game-search/main/index.html",
-  "precache-manifest.b62f277d69e32df6bbb8cfb832f2a194.js": "/react-game-search/main/precache-manifest.b62f277d69e32df6bbb8cfb832f2a194.js",
+  "precache-manifest.8d3500d2b2cbbf45e9f8c221e2411e47.js": "/react-game-search/main/precache-manifest.8d3500d2b2cbbf45e9f8c221e2411e47.js",
   "service-worker.js": "/react-game-search/main/service-worker.js"
 }
