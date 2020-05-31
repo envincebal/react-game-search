@@ -1,15 +1,15 @@
 {
-  "main.css": "/react-game-search/main/static/css/main.c75e6e98.chunk.css",
-  "main.js": "/react-game-search/main/static/js/main.cad23a9c.chunk.js",
-  "main.js.map": "/react-game-search/main/static/js/main.cad23a9c.chunk.js.map",
-  "static/js/1.4b9e268b.chunk.js": "/react-game-search/main/static/js/1.4b9e268b.chunk.js",
-  "static/js/1.4b9e268b.chunk.js.map": "/react-game-search/main/static/js/1.4b9e268b.chunk.js.map",
-  "runtime~main.js": "/react-game-search/main/static/js/runtime~main.f58f2758.js",
-  "runtime~main.js.map": "/react-game-search/main/static/js/runtime~main.f58f2758.js.map",
-  "static/media/no-box.jpeg": "/react-game-search/main/static/media/no-box.7f0b5126.jpeg",
-  "static/media/consoles.jpg": "/react-game-search/main/static/media/consoles.8a54017e.jpg",
-  "static/css/main.c75e6e98.chunk.css.map": "/react-game-search/main/static/css/main.c75e6e98.chunk.css.map",
-  "index.html": "/react-game-search/main/index.html",
-  "precache-manifest.21d850ed5b95ca511522772e54074718.js": "/react-game-search/main/precache-manifest.21d850ed5b95ca511522772e54074718.js",
-  "service-worker.js": "/react-game-search/main/service-worker.js"
+  "main.css": "/react-game-search/static/css/main.c75e6e98.chunk.css",
+  "main.js": "/react-game-search/static/js/main.4e83deb6.chunk.js",
+  "main.js.map": "/react-game-search/static/js/main.4e83deb6.chunk.js.map",
+  "static/js/1.4b9e268b.chunk.js": "/react-game-search/static/js/1.4b9e268b.chunk.js",
+  "static/js/1.4b9e268b.chunk.js.map": "/react-game-search/static/js/1.4b9e268b.chunk.js.map",
+  "runtime~main.js": "/react-game-search/static/js/runtime~main.055dcedc.js",
+  "runtime~main.js.map": "/react-game-search/static/js/runtime~main.055dcedc.js.map",
+  "static/media/no-box.jpeg": "/react-game-search/static/media/no-box.7f0b5126.jpeg",
+  "static/media/consoles.jpg": "/react-game-search/static/media/consoles.8a54017e.jpg",
+  "static/css/main.c75e6e98.chunk.css.map": "/react-game-search/static/css/main.c75e6e98.chunk.css.map",
+  "index.html": "/react-game-search/index.html",
+  "precache-manifest.ea2a58d56e15ae455e514f977242484d.js": "/react-game-search/precache-manifest.ea2a58d56e15ae455e514f977242484d.js",
+  "service-worker.js": "/react-game-search/service-worker.js"
 }
