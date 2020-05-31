@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4e83deb6768c2350c6d5",
+    "revision": "21f8681e17423dfb2eec",
     "url": "/react-game-search/static/css/main.c75e6e98.chunk.css"
   },
   {
-    "revision": "4e83deb6768c2350c6d5",
-    "url": "/react-game-search/static/js/main.4e83deb6.chunk.js"
+    "revision": "21f8681e17423dfb2eec",
+    "url": "/react-game-search/static/js/main.21f8681e.chunk.js"
   },
   {
     "revision": "4b9e268b2d1c8f62cf89",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/react-game-search/static/media/consoles.8a54017e.jpg"
   },
   {
-    "revision": "cfa861fbb27b9eb9c1725cd1eb24d26b",
+    "revision": "e59df96815de520a0f0cc31494e9312d",
     "url": "/react-game-search/index.html"
   }
 ];
