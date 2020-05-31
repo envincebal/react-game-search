@@ -93,6 +93,7 @@ class Search extends Component {
     const { games, error, loading, timeOut } = this.state;
     return (
       <div className="App">
+
         <div className="search-bar">
           <form>
             <input

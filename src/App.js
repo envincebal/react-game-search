@@ -4,12 +4,12 @@ import About from './components/About';
 import GameSearch from './components/GameSearch';
 import GamesDetails from './components/GamesDetails';
 import MainPage from './components/MainPage';
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      <HashRouter basename="/">
+      <BrowserRouter basename="/">
         <div className="App">
           <Nav />
           <div className="container">
@@ -21,7 +21,7 @@ class App extends Component {
             </Switch>
           </div>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
