@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://envincebal.github.io/react-game-search",
   "dependencies": {
-    "moment": "^2.24.0",
+    "moment": "^2.26.0",
     "node-sass": "^4.14.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5",
     "react-simple-storage": "^1.4.2"
@@ -31,7 +31,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.10.1",
-    "gh-pages": "^2.1.1"
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "gh-pages": "^2.2.0"
   }
 }
