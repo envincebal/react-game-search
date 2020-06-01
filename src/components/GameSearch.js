@@ -13,6 +13,18 @@ class Search extends Component {
     }
   }
 
+  componentWillMount(){
+    let storedGames = JSON.parse(sessionStorage.getItem("storedGames"));
+    if(storedGames){
+      storedGames.forEach(game => {
+        this.setState(prevState => ({
+          games: prevState.games.concat(game),
+          loading: false
+        }))
+      })
+    }
+  }
+
   updateInput = (event) => {
     this.setState({
       title: event.target.value
@@ -36,12 +48,16 @@ class Search extends Component {
       .then(res => res.json())
       .then(data => {
         const response = data.results;
-        response.forEach(game => {
-          this.setState(prevState => ({
-            games: prevState.games.concat(game),
-            loading: false
-          }))
-        });
+        if(!this.state.games.length) {
+          response.forEach(game => {
+            this.setState(prevState => ({
+              games: prevState.games.concat(game),
+              loading: false
+            }))
+
+          });
+          sessionStorage.setItem("storedGames", JSON.stringify(this.state.games));
+        }
 
         if (response.length > 0) {
           this.setState({
@@ -53,6 +69,7 @@ class Search extends Component {
             timeOut: true
           })
         }
+        
       })
       .catch(error => {
         console.log('Request failed', error);
@@ -93,7 +110,6 @@ class Search extends Component {
     const { games, error, loading, timeOut } = this.state;
     return (
       <div className="App">
-
         <div className="search-bar">
           <form>
             <input
@@ -113,7 +129,6 @@ class Search extends Component {
           </div>
         </div>
         <div className="games-container">
-
           {loading ? (
             <div className="loading-div">
               <i className="fa fa-3x fa-spinner fa-spin" />
