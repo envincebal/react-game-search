@@ -4,7 +4,6 @@ import errorIcon from "../img/no-icon.png";
 
 class Game extends Component {
 
-
   addDefaultSrc = (ev) => {
     ev.target.src = errorIcon;
   }
