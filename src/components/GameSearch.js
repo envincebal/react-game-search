@@ -58,7 +58,7 @@ class Search extends Component {
           });
           sessionStorage.setItem("storedGames", JSON.stringify(this.state.games));
         }
-
+        
         if (response.length > 0) {
           this.setState({
             loading: false
@@ -108,10 +108,12 @@ class Search extends Component {
 
   render() {
     const { games, error, loading, timeOut } = this.state;
+
     return (
       <div className="App">
         <div className="search-bar">
           <form>
+          
             <input
               className="input-field"
               type="text"

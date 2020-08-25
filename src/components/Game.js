@@ -9,17 +9,15 @@ class Game extends Component {
   }
 
   render() {
-    const { icon, gameTitle, gameDetails } = this.props;
+    const { icon, gameTitle} = this.props;
 
     return (
       <div className="game-box">
         <Link
           style={{ textDecoration: 'none' }}
           to={{
-            pathname: "/details",
-            state: { gameDetails }
+            pathname: `/${gameTitle}`
           }}>
-
           <div className="game-content">
             <img className="game-icon" onError={this.addDefaultSrc} src={icon} alt="icon" />
             <p className="game-link"><strong>{gameTitle}</strong></p>

@@ -3,15 +3,19 @@ import Moment from "moment";
 import errorBox from "../img/no-box.jpeg";
 
 class GameDetails extends Component {
+
+  
+
   addDefaultSrc = (ev) => {
     ev.target.src = errorBox;
   }
 
   getReleaseDate = () => {
-    const gameInfo = this.props.location.state.gameDetails;
+    const gameInfo = JSON.parse(sessionStorage.getItem("storedGames"));
+    const gameDetails = gameInfo.find(game => game.name === this.props.location.pathname.slice(1));
     const { expected_release_day,
       expected_release_month,
-      expected_release_year, original_release_date } = gameInfo;
+      expected_release_year, original_release_date } = gameDetails;
 
     if (!original_release_date) {
       return `${expected_release_month}-${expected_release_day}-${expected_release_year}`
@@ -21,14 +25,15 @@ class GameDetails extends Component {
   }
 
   render() {
-    const gameInfo = this.props.location.state.gameDetails;
+    const gameInfo = JSON.parse(sessionStorage.getItem("storedGames"));
+    const gameDetails = gameInfo.find(game => game.name === this.props.location.pathname.slice(1));
     const {
       image: {
         medium_url: icon
       },
       platforms,
       name,
-      deck, site_detail_url } = gameInfo;
+      deck, site_detail_url } = gameDetails;
 
     return (
       <div className="details-content">
