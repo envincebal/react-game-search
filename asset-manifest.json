@@ -1,15 +1,24 @@
 {
-  "main.css": "/react-game-search/static/css/main.c75e6e98.chunk.css",
-  "main.js": "/react-game-search/static/js/main.60658f6e.chunk.js",
-  "main.js.map": "/react-game-search/static/js/main.60658f6e.chunk.js.map",
-  "static/js/1.6d5a6f9f.chunk.js": "/react-game-search/static/js/1.6d5a6f9f.chunk.js",
-  "static/js/1.6d5a6f9f.chunk.js.map": "/react-game-search/static/js/1.6d5a6f9f.chunk.js.map",
-  "runtime~main.js": "/react-game-search/static/js/runtime~main.055dcedc.js",
-  "runtime~main.js.map": "/react-game-search/static/js/runtime~main.055dcedc.js.map",
-  "static/media/no-box.jpeg": "/react-game-search/static/media/no-box.7f0b5126.jpeg",
-  "static/media/consoles.jpg": "/react-game-search/static/media/consoles.8a54017e.jpg",
-  "static/css/main.c75e6e98.chunk.css.map": "/react-game-search/static/css/main.c75e6e98.chunk.css.map",
-  "index.html": "/react-game-search/index.html",
-  "precache-manifest.bd6db0eb93779aed1bd8f047a13366fe.js": "/react-game-search/precache-manifest.bd6db0eb93779aed1bd8f047a13366fe.js",
-  "service-worker.js": "/react-game-search/service-worker.js"
+  "files": {
+    "main.css": "/react-game-search/static/css/main.bede2b14.chunk.css",
+    "main.js": "/react-game-search/static/js/main.640bb9f7.chunk.js",
+    "main.js.map": "/react-game-search/static/js/main.640bb9f7.chunk.js.map",
+    "runtime-main.js": "/react-game-search/static/js/runtime-main.7e8ed6b4.js",
+    "runtime-main.js.map": "/react-game-search/static/js/runtime-main.7e8ed6b4.js.map",
+    "static/js/2.d641405a.chunk.js": "/react-game-search/static/js/2.d641405a.chunk.js",
+    "static/js/2.d641405a.chunk.js.map": "/react-game-search/static/js/2.d641405a.chunk.js.map",
+    "index.html": "/react-game-search/index.html",
+    "precache-manifest.259678f65ab41184e414e436b8770781.js": "/react-game-search/precache-manifest.259678f65ab41184e414e436b8770781.js",
+    "service-worker.js": "/react-game-search/service-worker.js",
+    "static/css/main.bede2b14.chunk.css.map": "/react-game-search/static/css/main.bede2b14.chunk.css.map",
+    "static/js/2.d641405a.chunk.js.LICENSE.txt": "/react-game-search/static/js/2.d641405a.chunk.js.LICENSE.txt",
+    "static/media/consoles.jpg": "/react-game-search/static/media/consoles.8a54017e.jpg",
+    "static/media/no-box.jpeg": "/react-game-search/static/media/no-box.7f0b5126.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7e8ed6b4.js",
+    "static/js/2.d641405a.chunk.js",
+    "static/css/main.bede2b14.chunk.css",
+    "static/js/main.640bb9f7.chunk.js"
+  ]
 }
