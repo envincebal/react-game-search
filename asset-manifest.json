@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-game-search/static/css/main.bede2b14.chunk.css",
-    "main.js": "/react-game-search/static/js/main.640bb9f7.chunk.js",
-    "main.js.map": "/react-game-search/static/js/main.640bb9f7.chunk.js.map",
+    "main.js": "/react-game-search/static/js/main.e07f09c2.chunk.js",
+    "main.js.map": "/react-game-search/static/js/main.e07f09c2.chunk.js.map",
     "runtime-main.js": "/react-game-search/static/js/runtime-main.7e8ed6b4.js",
     "runtime-main.js.map": "/react-game-search/static/js/runtime-main.7e8ed6b4.js.map",
     "static/js/2.d641405a.chunk.js": "/react-game-search/static/js/2.d641405a.chunk.js",
     "static/js/2.d641405a.chunk.js.map": "/react-game-search/static/js/2.d641405a.chunk.js.map",
     "index.html": "/react-game-search/index.html",
-    "precache-manifest.259678f65ab41184e414e436b8770781.js": "/react-game-search/precache-manifest.259678f65ab41184e414e436b8770781.js",
+    "precache-manifest.10d73cad89cf822272c7d02b8df9d8b4.js": "/react-game-search/precache-manifest.10d73cad89cf822272c7d02b8df9d8b4.js",
     "service-worker.js": "/react-game-search/service-worker.js",
     "static/css/main.bede2b14.chunk.css.map": "/react-game-search/static/css/main.bede2b14.chunk.css.map",
     "static/js/2.d641405a.chunk.js.LICENSE.txt": "/react-game-search/static/js/2.d641405a.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.7e8ed6b4.js",
     "static/js/2.d641405a.chunk.js",
     "static/css/main.bede2b14.chunk.css",
-    "static/js/main.640bb9f7.chunk.js"
+    "static/js/main.e07f09c2.chunk.js"
   ]
 }
