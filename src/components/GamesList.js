@@ -4,7 +4,7 @@ import Game from './Game';
 const GamesList = (props) => {
   return props.gamesList.map((game, id) => {
     return <Game
-      key={id}
+      key={game.id}
       game={game.name}
       icon={game.image.icon_url}
       gameTitle={game.name}
