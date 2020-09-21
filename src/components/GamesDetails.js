@@ -4,8 +4,6 @@ import errorBox from "../img/no-box.jpeg";
 
 class GameDetails extends Component {
 
-  
-
   addDefaultSrc = (ev) => {
     ev.target.src = errorBox;
   }

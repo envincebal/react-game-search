@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Game from './Game';
+import GamesList from './GamesList';
 
 class Search extends Component {
   constructor(props) {
@@ -113,7 +113,6 @@ class Search extends Component {
       <div className="App">
         <div className="search-bar">
           <form>
-          
             <input
               className="input-field"
               type="text"
@@ -137,16 +136,8 @@ class Search extends Component {
               <p className="loading">Loading....</p>
             </div>
           ) : (
-              games.map(game => {
-                return <Game
-                  key={game.id}
-                  game={game.name}
-                  icon={game.image.icon_url}
-                  gameTitle={game.name}
-                  gameDetails={game}
-                />
-              })
-            )
+            <GamesList gamesList={games} />
+          )
           }
         </div>
       </div>
