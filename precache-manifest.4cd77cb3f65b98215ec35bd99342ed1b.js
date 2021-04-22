@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b8bba88ae8d41f6049fd642b589055e",
+    "revision": "87deddb3e82d1d1c044352acf34ac2ac",
     "url": "/react-game-search/index.html"
   },
   {
-    "revision": "a353d556da7d58b9206e",
+    "revision": "3ed0e0cdb3c7f53569b2",
     "url": "/react-game-search/static/css/main.bede2b14.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-game-search/static/js/2.d641405a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a353d556da7d58b9206e",
-    "url": "/react-game-search/static/js/main.93bdb646.chunk.js"
+    "revision": "3ed0e0cdb3c7f53569b2",
+    "url": "/react-game-search/static/js/main.5bd430a7.chunk.js"
   },
   {
     "revision": "e03166b2dea231f429ee",
