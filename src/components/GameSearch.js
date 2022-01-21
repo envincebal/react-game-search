@@ -32,10 +32,9 @@ class Search extends Component {
   }
 
   handleGames = (search) => {
-    const proxyUrl = `https://cors.bridged.cc/`;
-    const key = `8cd10a7136710c1003c8e216d85941ace5a1f00e`;
     const endpoint = `https://www.giantbomb.com/api/search/?api_key=`;
-    const url = `${proxyUrl}${endpoint}${key}&format=json&resources=game&query=${search}&limit=30`;
+    const key = `8cd10a7136710c1003c8e216d85941ace5a1f00e`;
+    const url = `${endpoint}${key}&format=json&resources=game&query=${search}&limit=30`;
 
     this.setState({
       loading: true,
